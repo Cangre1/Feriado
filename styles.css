@@ -1938,3 +1938,11 @@ video {
     line-height: 1.25rem;
   }
 }
+
+.left40 {
+  left: 40rem;
+}
+
+.right40 {
+  right: 40rem;
+}
