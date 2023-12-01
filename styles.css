@@ -930,6 +930,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 29 37 / var(--tw-text-opacity));
 }
+.text-rosa-feriado {
+  color: #ff75ac;
+}
 
 @font-face {
   font-family: "rockyeah-sans";
