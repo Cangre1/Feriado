@@ -57,7 +57,62 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <!--SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
+
+  <style>
+    .swiper-button-next {
+      color: red;
+      opacity: 0.6;
+    }
+
+    .swiper-button-next:after {
+      font-size: 30px;
+    }
+
+    .swiper-button-next:hover {
+      color: red;
+      opacity: 1;
+      transition: all ease-in-out 300ms;
+    }
+
+    .swiper-button-prev {
+      color: red;
+      opacity: 0.6;
+    }
+
+    .swiper-button-prev:after {
+      font-size: 30px;
+    }
+
+    .swiper-button-prev:hover {
+      color: red;
+      opacity: 1;
+      transition: all ease-in-out 300ms;
+    }
+
+    .padding-swiper {
+      padding: 3rem 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .padding-swiper {
+        padding: 7rem 0;
+      }
+
+      .swiper-button-prev:after {
+        font-size: 44px;
+      }
+
+      .swiper-button-next:after {
+        font-size: 44px;
+      }
+    }
+  </style>
 
   <body class="bg-[#ebe7d8] overflow-x-hidden">
     <!--LOGO PRINCIPAL-->
@@ -959,7 +1014,7 @@
 
     <!--GRILLA TRAGOS-->
     <div
-      class="pt-5 pb-10 md:pt-20 lg:pt-10 xl:pt-10 lg:pb-64 2xl:pt-40 bg-cover bg-center overflow-hidden md:overflow-visible"
+      class="hidden pt-5 pb-10 md:pt-20 lg:pt-10 xl:pt-10 lg:pb-64 2xl:pt-40 bg-cover bg-center overflow-hidden md:overflow-visible"
       style="background-image: url(assets/ilustraciones/textura.png)"
     >
       <div
@@ -1112,10 +1167,196 @@
     </div>
     <!--GRILLA TRAGOS-->
 
+    <!--SWIPER TRAGOS-->
+    <div class="swiper mySwiper max-w-screen-2xl padding-swiper">
+      <div class="swiper-wrapper">
+        <!--FERIADITO-->
+        <div class="swiper-slide relative">
+          <img
+            src="/assets/ilustraciones/vaso-vermu.png"
+            class="absolute w-20 md:w-60 xl:w-80 left-7 md:left-16 top-3"
+            alt=""
+          />
+          <img
+            src="/assets/ilustraciones/rojo.svg"
+            class="absolute w-12 md:w-24 xl:w-32 right-12 md:right-40 top-36 md:top-20"
+            alt=""
+          />
+          <div
+            class="flex flex-col gap-y-2 md:gap-y-5 pl-5 m-auto"
+            style="width: fit-content"
+          >
+            <h1
+              class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-rojo-feriado uppercase font-rockyeah"
+            >
+              Feriadito
+            </h1>
+            <div
+              class="flex flex-col font-acumin font-bold text-base leading-4 sm:text-lg sm:leading-5 md:text-lg md:leading-5 lg:text-xl lg:leading-5 xl:text-2xl xl:leading-7 2xl:text-3xl 2xl:leading-8"
+            >
+              <p>Hielo</p>
+              <p>50ml de Gin</p>
+              <p>50ml de Feriado Vermú</p>
+              <p>15ml Shrub de ananá</p>
+              <p>50ml de tónica</p>
+            </div>
+            <div
+              class="text-xs leading-3 sm:text-sm sm:leading-4 md:text-sm md:leading-4 lg:text-base lg:leading-4 xl:text-lg xl:leading-5 2xl:text-xl 2xl:leading-6 font-acumin font-light"
+            >
+              <p>
+                Llenar el vaso con hielo.<br />Mezclar partes iguales de gin<br />y
+                de Feriado Vermú.<br />Agregar el schrub de Ananá*<br />Completar
+                con agua tónica.
+              </p>
+            </div>
+            <div
+              class="text-xs leading-3 xl:text-sm xl:leading-4 2xl:text-base 2xl:leading-5 font-acumin font-light"
+            >
+              <p>
+                *partes iguales de pulpa de ananá, <br />
+                azúcar y vinagre de manzana
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--FERIADITO-->
+        <!--NEGRONI-->
+        <div class="swiper-slide relative">
+          <img
+            src="/assets/ilustraciones/vaso-vermu.png"
+            class="absolute w-20 md:w-60 xl:w-80 left-7 md:left-16 top-3"
+            alt=""
+          />
+          <img
+            src="/assets/ilustraciones/rojo.svg"
+            class="absolute w-12 md:w-24 xl:w-32 right-12 md:right-40 top-36 md:top-20"
+            alt=""
+          />
+          <div
+            class="flex flex-col gap-y-2 md:gap-y-5 pl-5 m-auto"
+            style="width: fit-content"
+          >
+            <h1
+              class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-rojo-feriado uppercase font-rockyeah"
+            >
+              Negroni
+            </h1>
+            <div
+              class="flex flex-col font-acumin font-bold text-base leading-4 sm:text-lg sm:leading-5 md:text-lg md:leading-5 lg:text-xl lg:leading-5 xl:text-2xl xl:leading-7 2xl:text-3xl 2xl:leading-8"
+            >
+              <p>Hielo</p>
+              <p>30ml de Campari</p>
+              <p>30ml de Gin</p>
+              <p>30ml de Feriado Vermú</p>
+            </div>
+            <div
+              class="text-xs leading-3 sm:text-sm sm:leading-4 md:text-sm md:leading-4 lg:text-base lg:leading-4 xl:text-lg xl:leading-5 2xl:text-xl 2xl:leading-6 font-acumin font-light"
+            >
+              <p>
+                Llenar el vaso con hielo.<br />Mezclar partes iguales de gin,<br />Campari
+                y vermú rojo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--NEGRONI-->
+        <!--CLÁSICO-->
+        <div class="swiper-slide relative">
+          <img
+            src="/assets/ilustraciones/vaso-vermu.png"
+            class="absolute w-20 md:w-60 xl:w-80 left-7 md:left-16 top-3"
+            alt=""
+          />
+          <img
+            src="/assets/ilustraciones/rojo.svg"
+            class="absolute w-12 md:w-24 xl:w-32 right-12 md:right-40 top-36 md:top-20"
+            alt=""
+          />
+          <div
+            class="flex flex-col gap-y-2 md:gap-y-5 pl-5 m-auto"
+            style="width: fit-content"
+          >
+            <h1
+              class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-rojo-feriado uppercase font-rockyeah"
+            >
+              Clásico
+            </h1>
+            <div
+              class="flex flex-col font-acumin font-bold text-base leading-4 sm:text-lg sm:leading-5 md:text-lg md:leading-5 lg:text-xl lg:leading-5 xl:text-2xl xl:leading-7 2xl:text-3xl 2xl:leading-8"
+            >
+              <p>Mucho hielo</p>
+              <p>120ml de Feriado Vermú</p>
+              <p>50ml de soda</p>
+              <p>Media rodaja de naranja</p>
+            </div>
+            <div
+              class="text-xs leading-3 sm:text-sm sm:leading-4 md:text-sm md:leading-4 lg:text-base lg:leading-4 xl:text-lg xl:leading-5 2xl:text-xl 2xl:leading-6 font-acumin font-light"
+            >
+              <p>
+                Llenar el vaso con hielo.<br />Agregar los 120ml de vermú<br />Completar
+                con soda.<br />
+                Decorar con media naranja<br />dentro del vaso.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--CLÁSICO-->
+        <!--SPRITZ-->
+        <div class="swiper-slide relative">
+          <img
+            src="/assets/ilustraciones/copa-rosado.png"
+            class="absolute w-7 md:w-20 xl:w-32 left-14 md:left-40 top-5"
+            alt=""
+          />
+          <img
+            src="/assets/ilustraciones/rosado.svg"
+            class="absolute w-12 md:w-24 xl:w-32 right-12 md:right-40 top-36 md:top-20"
+            alt=""
+          />
+
+          <div
+            class="flex flex-col gap-y-2 md:gap-y-5 pl-5 m-auto"
+            style="width: fit-content"
+          >
+            <h1
+              class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-rojo-feriado uppercase font-rockyeah"
+            >
+              Spritz
+            </h1>
+            <div
+              class="flex flex-col font-acumin font-bold text-base leading-4 sm:text-lg sm:leading-5 md:text-lg md:leading-5 lg:text-xl lg:leading-5 xl:text-2xl xl:leading-7 2xl:text-3xl 2xl:leading-8"
+            >
+              <p>Mucho hielo</p>
+              <p>2 partes de Feriado <br />Vermú Rosado</p>
+              <p>1 parte de prosecco</p>
+              <p>1 parte de tónica</p>
+              <p>Media rodaja de naranja</p>
+            </div>
+            <div
+              class="text-xs leading-3 sm:text-sm sm:leading-4 md:text-sm md:leading-4 lg:text-base lg:leading-4 xl:text-lg xl:leading-5 2xl:text-xl 2xl:leading-6 font-acumin font-light"
+            >
+              <p>
+                Llenar el vaso con hielo.<br />Agregar los 120ml de vermú<br />Completar
+                con soda.<br />
+                Decorar con media naranja<br />dentro del vaso.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--SPRITZ-->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!--SWIPER TRAGOS-->
+
     <!--FOOTER-->
     <div
       class="h-[34rem] lg:h-[40rem] xl:h-[47rem] gap-y-16 bg-cover bg-center"
-      style="background-image: url(assets/ilustraciones/textura2.png)"
+      style="
+        background-image: url(assets/ilustraciones/textura2.png);
+        padding-top: 50px;
+      "
     >
       <div
         class="container mx-auto flex flex-col justify-center items-center relative gap-y-40 sm:gap-y-32 md:gap-y-16 lg:gap-y-24 2xl:gap-y-40"
@@ -1216,6 +1457,19 @@
     <!--FOOTER-->
     <script>
       AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   </body>
 </html>
