@@ -18,7 +18,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/ilustraciones/favicon-home.png"
+      href="assets/ilustraciones/favicon-sifon-1.png"
     />
 
     <!-- Meta tags para SEO -->
@@ -103,9 +103,17 @@
       width: 10rem;
     }
 
+    .w-cantina-hero {
+      width: 8rem;
+    }
+
     @media only screen and (min-width: 1024px) {
       .w-cantina {
         width: 20rem;
+      }
+
+      .w-cantina-hero {
+        width: 15rem;
       }
 
       .padding-swiper {
@@ -125,15 +133,24 @@
   <body class="bg-[#ebe7d8] overflow-x-hidden">
     <!--LOGO PRINCIPAL-->
     <div
-      class="flex justify-center items-center relative h-[28rem] sm:h-screen bg-center bg-cover"
+      class="flex justify-center items-center relative h-[28rem] sm:h-screen bg-center bg-cover flex-col"
       style="background-image: url(assets/ilustraciones/textura.png)"
     >
       <img
         src="assets/ilustraciones/logo.png"
-        s
         alt=""
-        class="w-[17rem] sm:w-[35rem] lg:w-[40rem] xl:w-[40rem] pb-32 -mt-24"
+        class="w-[17rem] sm:w-[35rem] lg:w-[40rem] xl:w-[40rem] pb-8 -mt-48 lg:pb-32 lg:-mt-24"
       />
+      <a
+        href="/assets/ilustraciones/feriado-cantina.pdf"
+        class="z-50"
+        target="_blank"
+      >
+        <img
+          src="/assets/ilustraciones/nuestra-cantina.png"
+          alt=""
+          class="mx-auto transform hover:-translate-y-2 transition-all ease-in-out duration-300 w-cantina-hero"
+      /></a>
       <!--ILUSTRACION-->
       <img
         src="assets/ilustraciones/sifon-vaso.png"
