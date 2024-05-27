@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Cuando un día cualquiera se transforma en un día ganado. Corre un vientito con aires de libertad, es imposible disimular la sonrisa. Mejor será destapar un Vermú y encontrar un lugar para disfrutarlo."
+    />
+
+    <!-- Título de la página  -->
+    <title>Feriado Vermú - Cantina</title>
+
+    <!-- Favicon (icono de pestaña del navegador) -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/ilustraciones/favicon-sifon-1.png"
+    />
+
+    <!-- Meta tags para SEO -->
+    <meta name="keywords" content="Feriado Vermú, Feriado, Vermú, Aperitivo" />
+    <meta name="author" content="Digital Fellow" />
+    <meta name="robots" content="index, follow" />
+    <!-- Permite que los motores de búsqueda indexen y sigan enlaces -->
+    <meta name="revisit-after" content="7 days" />
+    <!-- Frecuencia de rastreo recomendada -->
+    <meta name="copyright" content="© 2023, Feriado Vermú" />
+
+    <!-- Open Graph y Twitter Card para compartir en redes sociales -->
+    <meta property="og:title" content="Feriado Vermú" />
+    <meta
+      property="og:description"
+      content="Cuando un día cualquiera se transforma en un día ganado. Corre un vientito con aires de libertad, es imposible disimular la sonrisa. Mejor será destapar un Vermú y encontrar un lugar para disfrutarlo."
+    />
+    <meta property="og:image" href="assets/ilustraciones/sifon-vasoicon.png" />
+    <meta name="twitter:card" href="assets/ilustraciones/frasevida.png" />
+    <meta name="twitter:title" content="Feriado Vermú" />
+    <meta
+      name="twitter:description"
+      content="Cuando un día cualquiera se transforma en un día ganado. Corre un vientito con aires de libertad, es imposible disimular la sonrisa. Mejor será destapar un Vermú y encontrar un lugar para disfrutarlo."
+    />
+    <meta name="twitter:image" href="assets/ilustraciones/sifon-vasoicon.png" />
+
+    <!--LIBRERIA-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    .w-logo {
+      width: 20rem;
+    }
+
+    .text-hero {
+      font-size: 22px;
+      line-height: 24px;
+      color: #f32735;
+      text-align: center;
+    }
+
+    .icon-dia-ganado {
+      width: 10rem;
+    }
+
+    .text-feriado-cantina {
+      font-size: 22px;
+      line-height: 24px;
+      color: #f32735;
+      text-align: center;
+    }
+    .underline-custom {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      text-decoration-thickness: 1px;
+    }
+
+    .text-especialidades {
+      font-size: 30px;
+    }
+
+    .text-listado-especialidades {
+      font-size: 22px;
+    }
+
+    .text-opciones {
+      font-size: 22px;
+    }
+
+    .text-abiertisimo {
+      font-size: 30px;
+      color: #0055b8;
+    }
+
+    .text-lugar-ideal {
+      color: #0055b8;
+      font-size: 22px;
+    }
+
+    .text-mascotas {
+      color: #0055b8;
+      font-size: 22px;
+    }
+
+    .text-title-footer {
+      font-size: 35px;
+    }
+
+    .text-subtitle-footer {
+      font-size: 24px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .text-hero {
+        font-size: 44px;
+        line-height: 50px;
+      }
+
+      .icon-dia-ganado {
+        width: 15rem;
+      }
+
+      .w-logo {
+        width: 34rem;
+      }
+
+      .text-feriado-cantina {
+        font-size: 44px;
+        line-height: 50px;
+      }
+
+      .underline-custom {
+        text-underline-offset: 12px;
+        text-decoration-thickness: 1px;
+      }
+
+      .text-especialidades {
+        font-size: 50px;
+      }
+
+      .text-listado-especialidades {
+        font-size: 45px;
+      }
+
+      .text-opciones {
+        font-size: 35px;
+      }
+
+      .text-abiertisimo {
+        font-size: 45px;
+      }
+
+      .text-lugar-ideal {
+        font-size: 40px;
+      }
+
+      .text-mascotas {
+        font-size: 30px;
+      }
+
+      .text-title-footer {
+        font-size: 57px;
+      }
+
+      .text-subtitle-footer {
+        font-size: 47px;
+      }
+    }
+
+    @media only screen and (min-width: 1280px) {
+      .w-logo {
+        width: 50rem;
+      }
+
+      .text-opciones {
+        font-size: 45px;
+      }
+    }
+
+    @media only screen and (min-width: 1536px) {
+      .text-abiertisimo {
+        font-size: 60px;
+      }
+      .text-lugar-ideal {
+        font-size: 40px;
+      }
+
+      .text-mascotas {
+        font-size: 35px;
+      }
+    }
+  </style>
+
+  <body class="bg-[#ebe7d8] overflow-x-hidden">
+    <div class="container px-5 mx-auto">
+      <!--CONTAINER H-SCREEN START-->
+      <div class="h-screen relative flex justify-center items-center">
+        <img
+          src="assets/ilustraciones/cantina/silla.png"
+          alt=""
+          class="w-24 absolute bottom-28 lg:hidden"
+        />
+        <!--HEADER START-->
+        <div
+          class="p-4 lg:p-7 border absolute w-full top-10 flex items-center justify-center"
+          style="border-color: #9ac4ed"
+        >
+          <span class="absolute -top-8" style="font-size: 40px; color: #0055b8"
+            >(Salú)</span
+          >
+          <img
+            src="assets/ilustraciones/cantina/dia-ganado.png"
+            alt=""
+            class="absolute lg:-left-0 top-20 lg:top-0 icon-dia-ganado"
+          />
+        </div>
+        <!--HEADER END-->
+
+        <!--LOGO + FRASE START-->
+        <div
+          class="absolute flex flex-col justify-center items-center gap-y-16 lg:gap-y-16 xl:gap-y-32"
+        >
+          <img
+            src="assets/ilustraciones/cantina/silla.png"
+            alt=""
+            class="w-24 xl:w-32 absolute lg:right-0 -top-24 xl:top-0 hidden lg:block"
+          />
+          <p class="text-hero xl:px-72">
+            Llegó el momento de tener <strong>nuestro propio lugar</strong> y
+            recibir a todos nuestros amigos:
+          </p>
+          <img
+            src="assets/ilustraciones/cantina/logo.png"
+            alt=""
+            class="w-logo"
+          />
+        </div>
+        <!--LOGO + FRASE END-->
+      </div>
+      <!--CONTAINER H-SCREEN END-->
+
+      <!--SECTION 1 START-->
+      <div class="flex flex-col justify-center items-center gap-y-20 relative">
+        <div
+          class="xl:px-72 flex flex-col gap-y-5 lg:gap-y-10 text-feriado-cantina"
+        >
+          <p>
+            <strong>Feriado Cantina</strong> es la casa de Feriado Vermú. Es
+            donde te juntás con amigos, familia y amores. Es buen morfi, buen
+            chupi, todos los días, todo el día. Es barrio. Es vermú. Es vereda.
+          </p>
+          <p class="underline-custom">
+            <strong>Ricos tragos, tortilla babé y largas sobremesas. </strong>
+          </p>
+          <p>Nos vemos pronto,</p>
+        </div>
+        <img
+          src="assets/ilustraciones/cantina/salu.png"
+          alt=""
+          class="w-32 lg:w-48 xl:w-60"
+        />
+        <img
+          src="assets/ilustraciones/cantina/vaso-vermu.png"
+          alt=""
+          class="w-16 lg:w-24 xl:w-40 absolute right-5 lg:right-0 bottom-10 lg:bottom-0"
+        />
+      </div>
+      <!--SECTION 1 END-->
+
+      <!--SECTION 2 START-->
+      <div
+        class="border px-5 py-14 lg:p-10 xl:p-16 flex flex-col gap-y-2 lg:gap-y-6 relative mt-32"
+        style="border-color: #9ac4ed; color: #0055b8"
+      >
+        <div
+          class="uppercase absolute top-6 left-5 lg:top-5 lg:left-16 flex gap-x-24 lg:gap-x-96"
+        >
+          <span>Vení Antojón</span><span>Salí Pipón</span>
+        </div>
+        <img
+          src="assets/ilustraciones/cantina/aceituna.png"
+          alt=""
+          class="w-20 lg:w-32 xl:w-44 absolute -top-5 lg:-top-10 right-0"
+        />
+        <h1 class="underline text-especialidades">Especialidades de la casa</h1>
+        <div class="flex flex-col text-listado-especialidades">
+          <span>Entradas y platitos</span>
+          <span>Sanguches y ensaladas</span>
+          <span>Pizzas media masa al corte</span>
+          <span>Pastas</span>
+          <span>Minutas</span>
+          <span>Postres</span>
+          <span>Cafetería</span>
+          <span>Coctelería</span>
+        </div>
+      </div>
+      <!--SECTION 2 END-->
+
+      <!--SECTION 3 START-->
+      <div
+        class="border lg:px-5 xl:px-16 py-5 relative"
+        style="border-color: #9ac4ed; color: #0055b8; border-top-width: 0px"
+      >
+        <div
+          class="flex flex-col lg:flex-row lg:gap-x-10 2xl:gap-x-20 text-opciones"
+        >
+          <div class="relative flex justify-center items-center">
+            <img
+              src="assets/ilustraciones/cantina/redondeado.png"
+              alt=""
+              class="w-36 lg:w-60"
+            />
+            <h1 class="uppercase absolute">Opciones</h1>
+          </div>
+          <div
+            class="flex justify-center items-center gap-x-2 py-2 lg:py-0 lg:gap-x-5 xl:gap-x-10"
+          >
+            <div class="relative flex justify-center items-center">
+              <p class="">Sin gluten</p>
+              <img
+                src="assets/ilustraciones/cantina/subrayado.png"
+                alt=""
+                class="w-44 absolute bottom-0 -left-0"
+              />
+            </div>
+            /
+            <div class="relative flex justify-center items-center">
+              <p class="">Vegetarianas</p>
+              <img
+                src="assets/ilustraciones/cantina/subrayado.png"
+                alt=""
+                class="w-60 absolute bottom-0 -left-0"
+              />
+            </div>
+            /
+            <div class="relative flex justify-center items-center">
+              <p class="">Infantiles</p>
+              <img
+                src="assets/ilustraciones/cantina/subrayado.png"
+                alt=""
+                class="w-44 absolute bottom-0 -left-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SECTION 3 END-->
+
+      <!--SECTION 4 START-->
+      <div
+        class="border relative w-full flex flex-col gap-y-10 lg:gap-y-0 lg:flex-row mb-10"
+        style="border-color: #9ac4ed; color: #0055b8"
+      >
+        <div class="w-full lg:w-3/5 relative">
+          <iframe
+            class="w-full h-96 lg:h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.8592071354697!2d-58.47980039999999!3d-34.55712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb776c0c0c771%3A0x80e05e9f33f582b5!2sFeriado%20Cantina%20Coghlan!5e0!3m2!1ses!2sar!4v1716575615931!5m2!1ses!2sar"
+            wstyle="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <img
+            src="assets/ilustraciones/cantina/silla-silueta.png"
+            alt=""
+            class="absolute -bottom-5 right-16 w-12 lg:w-20"
+          />
+        </div>
+        <div class="w-full lg:w-2/5 border-l" style="border-color: #9ac4ed">
+          <!--Lunes-->
+          <div
+            class="flex justify-between lg:px-10 py-5 border-b"
+            style="border-color: #9ac4ed"
+          >
+            <img
+              src="assets/ilustraciones/cantina/lunes.png"
+              alt=""
+              class="w-20 lg:w-32"
+            /><img
+              src="assets/ilustraciones/cantina/hs-1.png"
+              alt=""
+              class="w-20 lg:w-32"
+            />
+          </div>
+          <!--Martes-->
+          <div
+            class="flex justify-between lg:px-10 py-5 border-b"
+            style="border-color: #9ac4ed"
+          >
+            <img
+              src="assets/ilustraciones/cantina/martes.png"
+              alt=""
+              class="w-24 lg:w-36"
+            /><img
+              src="assets/ilustraciones/cantina/hs-1.png"
+              alt=""
+              class="w-20 lg:w-32"
+            />
+          </div>
+          <!--Miercoles-->
+          <div
+            class="flex justify-between lg:px-10 py-5 border-b"
+            style="border-color: #9ac4ed"
+          >
+            <img
+              src="assets/ilustraciones/cantina/miercoles.png"
+              alt=""
+              class="w-32 lg:w-44"
+            /><img
+              src="assets/ilustraciones/cantina/hs-1.png"
+              alt=""
+              class="w-20 lg:w-32"
+            />
+          </div>
+          <!--Jueves-->
+          <div
+            class="flex justify-between lg:px-10 py-5 border-b"
+            style="border-color: #9ac4ed"
+          >
+            <img
+              src="assets/ilustraciones/cantina/jueves.png"
+              alt=""
+              class="w-20 lg:w-32"
+            /><img
+              src="assets/ilustraciones/cantina/hs-2.png"
+              alt=""
+              class="w-20 lg:w-32"
+            />
+          </div>
+          <!--Viernes-->
+          <div
+            class="flex justify-between lg:px-10 py-5 border-b"
+            style="border-color: #9ac4ed"
+          >
+            <img
+              src="assets/ilustraciones/cantina/viernes.png"
+              alt=""
+              class="w-24 lg:w-36"
+            /><img
+              src="assets/ilustraciones/cantina/hs-2.png"
+              alt=""
+              class="w-20 lg:w-32"
+            />
+          </div>
+          <!--Sabado-->
+          <div
+            class="flex justify-between lg:px-10 py-5 border-b"
+            style="border-color: #9ac4ed"
+          >
+            <img
+              src="assets/ilustraciones/cantina/sabado.png"
+              alt=""
+              class="w-24 lg:w-36"
+            /><img
+              src="assets/ilustraciones/cantina/hs-2.png"
+              alt=""
+              class="w-20 lg:w-32"
+            />
+          </div>
+          <!--Domingo-->
+          <div class="flex justify-between lg:px-10 py-5">
+            <img
+              src="assets/ilustraciones/cantina/domingo.png"
+              alt=""
+              class="w-28 lg:w-40"
+            /><img
+              src="assets/ilustraciones/cantina/hs-1.png"
+              alt=""
+              class="w-20 lg:w-32"
+            />
+          </div>
+        </div>
+      </div>
+      <!--SECTION 4 END-->
+
+      <!--SECTION 5 START-->
+      <div class="relative w-full flex mb-20 xl:mb-10">
+        <div class="hidden xl:block w-3/5"></div>
+        <div class="w-full xl:w-2/5 flex flex-col gap-y-5">
+          <div
+            class="border flex justify-center items-center gap-x-5 text-abiertisimo"
+            style="border-color: #9ac4ed"
+          >
+            <span>feriados</span>
+            <div>
+              <img
+                src="assets/ilustraciones/cantina/guion.png"
+                alt=""
+                class="w-12 mt-2 lg:mt-5"
+              />
+            </div>
+            <span>abiertísimo</span>
+          </div>
+          <img
+            src="assets/ilustraciones/cantina/frase-cabildo.png"
+            class="w-full lg:px-5"
+            alt=""
+          />
+        </div>
+      </div>
+      <!--SECTION 5 END-->
+
+      <!--SECTION 5 START-->
+      <div
+        class="relative w-full flex flex-col gap-y-36 xl:gap-y-0 xl:flex-row mb-10"
+      >
+        <div
+          class="w-full xl:w-3/5 relative flex justify-center xl:justify-start"
+        >
+          <div>
+            <img
+              src="assets/ilustraciones/cantina/frase-casa.png"
+              alt=""
+              class="w-full lg:w-8/12 mx-auto"
+            />
+          </div>
+
+          <img
+            src="assets/ilustraciones/cantina/disco.png"
+            alt=""
+            class="absolute w-20 lg:w-24 xl:w-32 -bottom-32 lg:-bottom-36 xl:bottom-10"
+          />
+        </div>
+        <div class="w-full xl:w-2/5 flex flex-col gap-y-8">
+          <div class="text-lugar-ideal">
+            <h1>El lugar ideal para:</h1>
+            <div class="ml-4 xl:ml-10">
+              <div class="relative">
+                <img
+                  src="assets/ilustraciones/cantina/check.png"
+                  alt=""
+                  class="absolute w-8 -left-2 lg:w-12 xl:w-16 xl:-left-9"
+                /><span>Festejos bien festivos</span>
+              </div>
+              <div class="relative">
+                <img
+                  src="assets/ilustraciones/cantina/check.png"
+                  alt=""
+                  class="absolute w-8 -left-2 lg:w-12 xl:w-16 xl:-left-9"
+                /><img
+                  src="assets/ilustraciones/cantina/redondead-1.png"
+                  alt=""
+                  class="absolute w-14 top-1 left-44 lg:left-80 lg:w-28 xl:right-28 xl:top-2"
+                /><span>Campeonatos de Truco</span>
+              </div>
+              <div class="relative">
+                <img
+                  src="assets/ilustraciones/cantina/check.png"
+                  alt=""
+                  class="absolute w-8 -left-2 lg:w-12 xl:w-16 xl:-left-9"
+                />
+                <img
+                  src="assets/ilustraciones/cantina/subrayado.png"
+                  alt=""
+                  class="absolute w-20 lg:w-36 bottom-0 left-24 lg:left-44 xl:right-60"
+                />
+                <span>Grandes Tertulias</span>
+              </div>
+              <div class="relative">
+                <img
+                  src="assets/ilustraciones/cantina/check.png"
+                  alt=""
+                  class="absolute w-8 -left-2 lg:w-12 xl:w-16 xl:-left-9"
+                /><span>Sobremesas XL</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center gap-x-2 lg:gap-x-5 relative text-mascotas"
+          >
+            <img
+              src="assets/ilustraciones/cantina/parentesis-l.png"
+              alt=""
+              class="w-2 lg:w-3"
+            /><span class="text-center">Somos amigos de las mascotas</span
+            ><img
+              src="assets/ilustraciones/cantina/subrayado.png"
+              class="w-16 lg:w-32 xl:w-24 2xl:w-32 absolute bottom-2 left-32 lg:left-96 xl:left-36 2xl:left-44"
+              alt=""
+            /><img
+              src="assets/ilustraciones/cantina/parentesis-l.png"
+              alt=""
+              class="w-2 lg:w-3 rotate-180"
+            />
+          </div>
+        </div>
+      </div>
+      <!--SECTION 5 END-->
+
+      <!--FOOTER START-->
+      <div class="py-12 xl:py-28 flex flex-col gap-y-5 lg:gap-y-0">
+        <div class="text-center flex flex-col gap-y-4">
+          <div style="color: #0055b8">
+            <h1 class="text-title-footer">¿Qué más?</h1>
+            <span class="text-subtitle-footer"
+              >Chusmeanos, seguinos y escribinos</span
+            >
+          </div>
+          <a href="https://www.instagram.com/feriadocantina/" target="_blank">
+            <span style="color: #f32735">@feriadocantina</span></a
+          >
+        </div>
+        <div
+          class="flex flex-col lg:flex-row gap-y-5 lg:gap-y-0 justify-center items-center gap-x-10"
+        >
+          <div>
+            <img
+              src="assets/ilustraciones/cantina/linea-footer.png"
+              alt=""
+              class="w-full"
+            />
+          </div>
+          <img
+            src="assets/ilustraciones/cantina/icon-footer.png"
+            alt=""
+            class="w-14 lg:w-16"
+          />
+        </div>
+      </div>
+      <!--FOOTER END-->
+    </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
