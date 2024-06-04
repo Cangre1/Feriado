@@ -882,6 +882,23 @@ video {
 .font-rockyeah {
   font-family: rockyeah-sans, sans-serif;
 }
+
+.font-apple {
+  font-family: AppleRegular, sans-serif;
+}
+
+.font-appleItalic {
+  font-family: AppleItalic, sans-serif;
+}
+
+.font-appleBoldItalic {
+  font-family: AppleBoldItalic, sans-serif;
+}
+
+.font-helvetica {
+  font-family: helvetica, sans-serif;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -947,6 +964,26 @@ video {
 @font-face {
   font-family: "Gropled-Bold";
   src: url("./fuentes/Gropled-Bold.otf") format("trueType");
+}
+
+@font-face {
+  font-family: "AppleRegular";
+  src: url("./fuentes/AppleGaramond.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "AppleItalic";
+  src: url("./fuentes/AppleGaramond-Italic.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "AppleBoldItalic";
+  src: url("./fuentes/AppleGaramond-BoldItalic.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("./fuentes/Helvetica.otf") format("trueType");
 }
 
 .content > span:nth-child(1) {
